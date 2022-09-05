@@ -39,7 +39,7 @@ public class EmployeServiceImpl implements EmployeService {
 		Employe emp=this.employeRepository.findById(id).orElseThrow(()->new RuntimeException("Employee Not found."));
 		emp.setName(employe.getName());
 		emp.setCity(employe.getCity());
-		emp.setAge(employe.getAge());
+		emp.setSalary(employe.getSalary());
 		
 		Employe save=this.employeRepository.save(emp);
 		return save;

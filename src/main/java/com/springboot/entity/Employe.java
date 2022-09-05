@@ -17,7 +17,7 @@ public class Employe {
 	private int id;
 	private String name;
 	private String city;
-	private int age;
+	private int salary;
 	private Date date;
 	
 	public int getId() {
@@ -38,11 +38,12 @@ public class Employe {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public int getAge() {
-		return age;
+
+	public int getSalary() {
+		return salary;
 	}
-	public void setAge(int age) {
-		this.age = age;
+	public void setSalary(int salary) {
+		this.salary = salary;
 	}
 	public Date getDate() {
 		return date;
@@ -50,6 +51,8 @@ public class Employe {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+	
+	
 	
 	
 
